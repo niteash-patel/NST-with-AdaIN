@@ -40,9 +40,7 @@ encoder = VGGEncoder(encoder_path).to(device)
 decoder = Decoder().to(device)
 decoder_path = os.path.join(
     BASE_DIR,
-    "experiment",
-    "experiment200",
-    "decoder_200.pth"
+    "experiment/experiment200/decoder_200.pth"
 )
 
 decoder.load_state_dict(
