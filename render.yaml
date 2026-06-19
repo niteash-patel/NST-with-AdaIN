@@ -3,4 +3,4 @@ services:
     name: nst-with-adain
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn --chdir utils app:app
+    startCommand: gunicorn --workers 1 --timeout 120 --chdir utils app:app
