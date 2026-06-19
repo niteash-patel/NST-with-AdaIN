@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: nst-with-adain
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --chdir utils app:app
